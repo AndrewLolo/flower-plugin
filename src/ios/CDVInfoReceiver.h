@@ -3,6 +3,6 @@
 
 @interface CDVInfoReceiver : CDVPlugin
 
-- (void)receive:(CDVInvokedUrlCommand*)command
+- (void)receive:(CDVInvokedUrlCommand*)command;
 
 @end

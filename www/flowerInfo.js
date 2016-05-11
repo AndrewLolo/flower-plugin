@@ -9,4 +9,4 @@ function receiveInfo(flowerName) {
 function onError() {alert('error');}
 function onSuccess() {alert('success');}
 
-module.exports = receiveInfo();
+module.exports = receiveInfo;
