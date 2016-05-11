@@ -1,4 +1,5 @@
-#import 'CDVInfoReceiver.h'
+#import "CDVInfoReceiver.h"
+#import <Cordova/CDVPlugin.h>
 
 @implementation CDVInfoReceiver
 
