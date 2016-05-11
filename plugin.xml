@@ -10,7 +10,7 @@
     </js-module>
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="FlowerInfo">
+            <feature name="InfoReceiver">
                 <param name="ios-package" value="CDVInfoReceiver"/>
             </feature>
         </config-file>
