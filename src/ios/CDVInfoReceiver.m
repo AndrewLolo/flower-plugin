@@ -7,8 +7,7 @@
 {
     CDVPluginResult* pluginResult = nil;
     NSString* notificationBody = [command.arguments objectAtIndex:0];
-
-     NSLog(@"**************************************************************");
+    float num = [command argumentAtIndex:1];
 
     if (notificationBody != nil && [notificationBody length] > 0) {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
