@@ -1,7 +1,7 @@
 var cordova = require('cordova');
 
 function receiveInfo(flowerName) {
-    cordova.exec(onError, onSuccess, "InfoReceiver", "receive", [flowerName]);
+    cordova.exec(onSuccess, onError, 'InfoReceiver', 'receive', [flowerName]);
 }
 
 function onError() {alert('error');}
