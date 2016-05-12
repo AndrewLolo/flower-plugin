@@ -14,7 +14,7 @@
                 <param name="ios-package" value="CDVInfoReceiver"/>
             </feature>
         </config-file>
-        <framework> src="UIKit.framework"</framework>
+        <framework src="UIKit.framework" />
         <header-file src="src/ios/CDVInfoReceiver.h" />
         <source-file src="src/ios/CDVInfoReceiver.m" />
     </platform>
