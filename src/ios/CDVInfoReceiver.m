@@ -19,6 +19,11 @@
 - (void)addNotification:(CDVInvokedUrlCommand*)command
 {
     UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.timeZone  = [NSTimeZone systemTimeZone];
+    notification.fireDate  = [[NSDate date] dateByAddingTimeInterval:5.0f];
+    notification.alertAction = @"More info";
+    notification.alertBody = @"iMaladec Local Notification example";
+    notification.soundName = UILocalNotificationDefaultSoundName;
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
 }
 
