@@ -5,6 +5,7 @@
 
 - (void)addNotification:(CDVInvokedUrlCommand*)command
 {
+[self.commandDelegate runInBackground:^{
     CDVPluginResult* pluginResult = nil;
     NSString* notificationBody = [command.arguments objectAtIndex:0];
     id num = [command argumentAtIndex:1];
@@ -24,6 +25,7 @@
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    }];
 }
 
 @end
