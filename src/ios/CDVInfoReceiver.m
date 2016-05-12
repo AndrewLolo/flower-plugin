@@ -20,4 +20,8 @@
 {
 }
 
+- (void)removeNotification:(UILocalNotification*)command
+{
+}
+
 @end
