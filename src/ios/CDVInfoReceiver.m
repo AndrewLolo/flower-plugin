@@ -20,7 +20,6 @@
 {
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
-    [notification release];
 }
 
 - (void)removeNotification:(UILocalNotification*)command
