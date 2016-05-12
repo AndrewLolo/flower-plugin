@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import <UIApplication.h>
+#import <UIKit/UIKit.h>
 #import <Cordova/CDVPlugin.h>
 
 @interface CDVInfoReceiver : CDVPlugin
