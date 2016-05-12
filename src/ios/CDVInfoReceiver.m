@@ -25,6 +25,8 @@
     notification.alertBody = @"iMaladec Local Notification example";
     notification.soundName = UILocalNotificationDefaultSoundName;
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
 - (void)removeNotification:(UILocalNotification*)command
