@@ -1,4 +1,5 @@
 #import "CDVInfoReceiver.h"
+#import <UIKit/UIKit.h>
 
 @implementation CDVInfoReceiver
 
