@@ -18,25 +18,6 @@
 
 - (void)addNotification:(CDVInvokedUrlCommand*)command
 {
-    UILocalNotification *notif = [[UILocalNotification alloc] init];
-
-    notif.timeZone = [NSTimeZone defaultTimeZone];
-
-    notif.fireDate = [[NSDate date] dateByAddingTimeInterval:20.0f];
-
-    notif.alertAction = @"Тыдыщ!";
-
-    notif.alertBody = @"Вот такой вот нотификатор!";
-
-    notif.soundName = UILocalNotificationDefaultSoundName;
-
-    notif.applicationIconBadgeNumber = 1;
-
-    notif.repeatInterval = NSWeekCalendarUnit;
-
-    [[UIApplication sharedApplication] scheduleLocalNotification:notif];
-
-    [notif release];
 }
 
 @end
