@@ -18,7 +18,7 @@
 
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     notification.timeZone  = [NSTimeZone systemTimeZone];
-    notification.fireDate  = [[NSDate date] dateByAddingTimeInterval:5.0f];
+    notification.fireDate  = [[NSDate date] dateByAddingTimeInterval:notificationInterval];
     notification.alertAction = @"Ok";
     notification.alertBody = notificationBody;
     notification.soundName = UILocalNotificationDefaultSoundName;
