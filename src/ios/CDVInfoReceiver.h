@@ -4,8 +4,6 @@
 
 @interface CDVInfoReceiver : CDVPlugin
 
-- (void)receive:(CDVInvokedUrlCommand*)command;
 - (void)addNotification:(CDVInvokedUrlCommand*)command;
-- (void)removeNotification:(UILocalNotification*)command;
 
 @end
