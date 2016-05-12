@@ -5,6 +5,6 @@ function receiveInfo(flowerName, interval) {
 }
 
 function onError() {alert('error');}
-function onSuccess(result) {alert(result);}
+function onSuccess() {alert('success');}
 
 module.exports = receiveInfo;
