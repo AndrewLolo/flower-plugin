@@ -19,6 +19,7 @@
 - (void)addNotification:(CDVInvokedUrlCommand*)command
 {
     UILocalNotification *notification = [[UILocalNotification alloc] init];
+    [notification release];
 }
 
 - (void)removeNotification:(UILocalNotification*)command
