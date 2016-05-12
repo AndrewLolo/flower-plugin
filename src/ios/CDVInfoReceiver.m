@@ -1,5 +1,4 @@
 #import "CDVInfoReceiver.h"
-#import <UIKit/UIKit.h>
 
 @implementation CDVInfoReceiver
 
@@ -19,7 +18,9 @@
 
 - (void)addNotification:(CDVInvokedUrlCommand*)command
 {
+    UILocalNotification *notif = [[UILocalNotification alloc] init];
 
+    [notif release];
 }
 
 @end
