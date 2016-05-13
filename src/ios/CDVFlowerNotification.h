@@ -2,7 +2,7 @@
 #import <UIKit/UIKit.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface CDVInfoReceiver : CDVPlugin
+@interface CDVFlowerNotification : CDVPlugin
 
 - (void)addNotification:(CDVInvokedUrlCommand*)command;
 

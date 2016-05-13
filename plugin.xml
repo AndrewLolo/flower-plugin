@@ -5,17 +5,17 @@
     <description>Gets information about flower watering</description>
     <license>Apache 2.0</license>
     <keywords>cordova</keywords>
-    <js-module src="www/flowerInfo.js" name="flowerInfo">
-        <clobbers target="flowerInfo" />
+    <js-module src="www/flowerNotification.js" name="flowerNotification">
+        <clobbers target="flowerNotification" />
     </js-module>
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="InfoReceiver">
-                <param name="ios-package" value="CDVInfoReceiver"/>
+            <feature name="FlowerNotification">
+                <param name="ios-package" value="CDVFlowerNotification"/>
             </feature>
         </config-file>
         <framework src="UIKit.framework" />
-        <header-file src="src/ios/CDVInfoReceiver.h" />
-        <source-file src="src/ios/CDVInfoReceiver.m" />
+        <header-file src="src/ios/CDVFlowerNotification.h" />
+        <source-file src="src/ios/CDVFlowerNotification.m" />
     </platform>
 </plugin>

@@ -1,6 +1,6 @@
-#import "CDVInfoReceiver.h"
+#import "CDVFlowerNotification.h"
 
-@implementation CDVInfoReceiver
+@implementation CDVFlowerNotification
 
 
 - (void)addNotification:(CDVInvokedUrlCommand*)command
